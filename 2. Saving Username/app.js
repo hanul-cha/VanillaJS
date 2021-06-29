@@ -20,7 +20,7 @@ function onLoginSubmit(e) {//함수안에 공간을 만들어 줌으로써 이�
     greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
-loginForm.addEventListener("submit", onLoginSubmit);
+
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);//콘솔스토리지에서 "username"이라는 키를 가져옴
 
