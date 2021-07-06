@@ -15,7 +15,9 @@ function saveToDo() {
 function deleteToDo(event) {
     const li = event.target.parentElement;
     console.log(li.id);
+    toDos = toDos.filter(toDo => toDo.id !== parseInt(li.id));
     li.remove();
+    saveToDo();
 }
 
 //li와 button 엘리멘트를 추가하는 구문
